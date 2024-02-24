@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    width: 150px;
+}
+.page{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: scroll;
+    display: grid;
+    /* organizando el maquetado con grid  */
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 2fr 1fr 4fr 1fr;
+    grid-template-areas: "header header"
+                         "form menu"
+                         "body menu"
+                         "footter menu";
+}
+.page .headerContent{
+    background-color: yellow;
+
+    /* este nombre no tiene porque ser igual a la clase  */
+    grid-area: header;
+}
+.page .menuContent{
+    background-color: gray;
+    grid-area: menu;
+}
+.page .formSearch{
+    background-color: black;
+    grid-area: form;
+}
+.page .bodyContent{
+    background-color: red;
+    grid-area: body;
+}
+.page .footterContent{
+    background-color: blue;
+    grid-area: footter;
+}
+.btn{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
